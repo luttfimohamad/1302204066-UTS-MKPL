@@ -1,30 +1,17 @@
 package lib;
 
 import java.time.LocalDate;
-import java.util.LinkedList;
-import java.util.List;
 
 public class Employee {
 
-	// Employe Personal Information
 	private EmployeePersonalInformation employeePersonalInformation;
-
-	// Employee Salary Grade
 	private EmployeeSalaryGrade employeeSalaryGrade;
-
-	// Employee Additional Income
+	private EmployeeDependent employeeDependent;
 	private EmployeeAdditionalIncome employeeAdditionalIncome;
-
-	// Employee Salary Deduction
 	private EmployeeSalaryDeduction employeeSalaryDeduction;
 
-	// dependentInformation
-	private EmployeeDependent employeeDependent;
-
-	public Employee(String employeeId, String firstName, String lastName, String idNumber, String address,
-			LocalDate joinDate, boolean isForeigner, EmployeePersonalInformation.Gender gender) {
-		this.employeePersonalInformation = new EmployeePersonalInformation(employeeId, firstName, lastName, idNumber,
-				address, joinDate, gender);
+	public Employee(EmployeePersonalInformation personalInformation, boolean isForeigner) {
+		this.employeePersonalInformation = personalInformation;
 		this.employeeSalaryGrade = new EmployeeSalaryGrade();
 		this.employeeDependent = new EmployeeDependent();
 	}
