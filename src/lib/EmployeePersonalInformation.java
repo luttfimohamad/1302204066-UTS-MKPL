@@ -13,7 +13,7 @@ public class EmployeePersonalInformation {
     private String lastName;
     private String idNumber;
     private String address;
-    private LocalDate joinDate;
+    public LocalDate joinDate;
     private Gender gender;
 
     public EmployeePersonalInformation() {

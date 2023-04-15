@@ -1,7 +1,7 @@
 package lib;
 
 public class EmployeeSalaryGrade {
-    private int monthlySalary;
+    public int monthlySalary;
 
     /**
      * Fungsi untuk menentukan gaji bulanan pegawai berdasarkan grade kepegawaiannya

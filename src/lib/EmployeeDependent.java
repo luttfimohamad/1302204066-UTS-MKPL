@@ -5,10 +5,10 @@ import java.util.LinkedList;
 
 public class EmployeeDependent {
     private String spouseName;
-    private String spouseIdNumber;
+    public String spouseIdNumber;
 
     private List<String> childNames;
-    private List<String> childIdNumbers;
+    public List<String> childIdNumbers;
 
     public EmployeeDependent() {
         this.spouseName = "";
