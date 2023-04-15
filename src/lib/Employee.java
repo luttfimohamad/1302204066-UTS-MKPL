@@ -13,7 +13,7 @@ public class Employee {
 	private EmployeeSalaryGrade employeeSalaryGrade;
 
 	// Employee Additional Income
-	private int otherMonthlyIncome;
+	private EmployeeAdditionalIncome employeeAdditionalIncome;
 
 	// Employee Salary Deduction
 	private EmployeeSalaryDeduction employeeSalaryDeduction;
@@ -33,10 +33,6 @@ public class Employee {
 
 		childNames = new LinkedList<String>();
 		childIdNumbers = new LinkedList<String>();
-	}
-
-	public void setAdditionalIncome(int income) {
-		this.otherMonthlyIncome = income;
 	}
 
 	public void setSpouse(String spouseName, String spouseIdNumber) {
