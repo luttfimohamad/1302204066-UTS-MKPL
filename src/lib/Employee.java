@@ -6,16 +6,17 @@ import java.util.List;
 
 public class Employee {
 
-	// EmployePersonalInformation
+	// Employe Personal Information
 	private EmployeePersonalInformation employeePersonalInformation;
 
-	// EmployeeGrade
+	// Employee Salary Grade
 	private EmployeeSalaryGrade employeeSalaryGrade;
 
-	// EmployeeAdditionalIncome
+	// Employee Additional Income
 	private int otherMonthlyIncome;
-	// EmployeeDeduction
-	private int annualDeductible;
+
+	// Employee Salary Deduction
+	private EmployeeSalaryDeduction employeeSalaryDeduction;
 
 	// dependentInformation
 	private String spouseName;
@@ -32,10 +33,6 @@ public class Employee {
 
 		childNames = new LinkedList<String>();
 		childIdNumbers = new LinkedList<String>();
-	}
-
-	public void setAnnualDeductible(int deductible) {
-		this.annualDeductible = deductible;
 	}
 
 	public void setAdditionalIncome(int income) {
